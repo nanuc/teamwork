@@ -108,10 +108,6 @@ class TeamworkServiceProvider extends ServiceProvider
      */
     protected function registerCommands()
     {
-        if ($this->app->runningInConsole()) {
-            $this->commands([
-                Commands\MakeTeamwork::class,
-            ]);
-        }
+       
     }
 }
